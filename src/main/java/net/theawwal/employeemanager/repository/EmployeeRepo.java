@@ -1,8 +1,7 @@
-package repository;
+package net.theawwal.employeemanager.repository;
 
-import Models.Employee;
+import net.theawwal.employeemanager.Models.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
-
 import java.util.Optional;
 
 public interface EmployeeRepo extends JpaRepository<Employee,Long> {

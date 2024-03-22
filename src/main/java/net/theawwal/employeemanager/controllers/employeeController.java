@@ -1,18 +1,18 @@
-package controllers;
+package net.theawwal.employeemanager.controllers;
 
-import Models.Employee;
+import net.theawwal.employeemanager.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import service.EmployeeService;
-
 import java.util.List;
+import net.theawwal.employeemanager.Models.Employee;
 
 @RestController
 @RequestMapping("/employee")
 public class employeeController {
     private final EmployeeService employeeService;
-
+@Autowired
     public employeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
