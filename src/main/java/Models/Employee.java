@@ -17,10 +17,8 @@ public class Employee implements Serializable {
     private String imageUrl;
     @Column(nullable = false, updatable = false)
     private String employeeCode;
-    public Employee() {
-    }
+    public Employee() {}
     public Employee(String name, String jobTitle, String phoneNumber, String imageUrl, String employeeCode) {
-
         this.name = name;
         this.jobTitle = jobTitle;
         this.phoneNumber = phoneNumber;
