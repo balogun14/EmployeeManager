@@ -80,6 +80,9 @@ public class Employee implements Serializable {
         this.id = id;
     }
 
+    public void setEmployeeCode(String code){
+        this.employeeCode = code;
+    }
     @Override
     public String toString() {
         return "Employee{" +
